@@ -7,7 +7,7 @@ steps:
 
 # Push the image to Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'europe-west3-docker.pkg.dev/de0360-sbx-data-academy-dr/CICD2/my-app']  
+  args: ['push', 'europe-west3-docker.pkg.dev/de0360-sbx-data-academy-dr/docker-repo']  
   
 # start container as job using  cloud run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
